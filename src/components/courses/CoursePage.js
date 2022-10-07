@@ -41,7 +41,7 @@ class CoursesPage extends Component {
           this.props.courses.map((course) => {
             return (
               <div key={course.title}>
-                <p>course.title</p>
+                <p>{course.title}</p>
               </div>
             );
           })}
@@ -57,7 +57,7 @@ CoursesPage.propTypes = {
 
 const mapStateToProps = (state) => {
   return {
-    courses: state.course,
+    courses: state.courses,
   };
 };
 
